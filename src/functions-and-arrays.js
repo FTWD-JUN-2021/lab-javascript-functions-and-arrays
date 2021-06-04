@@ -127,11 +127,20 @@ const wordsCount = [
   'eating',
   'matter',
   'truth',
+  'trouble',
   'disobedience',
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes(arr, word) {
+  let counter = 0;
+  for (let eachWord of arr) {
+    if (eachWord === word){
+      counter++
+    }
+  }
+  return counter
+}
 
 
 
